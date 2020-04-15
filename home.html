@@ -114,19 +114,19 @@
         <!-- CONTAINER -->
         <div class="shadow p-3 mb-5 bg-white rounded">
           <div class="row">
-            <div class="col-sm-12 col-md-2 mt-5">
+            <div class="col-sm-12 col-md-2 mt-5 form-group">
               <input type="radio" name="radio" aria-label="" />
               <label>No mês</label>
             </div>
-            <div class="col-sm-12 col-md-2 mt-5">
+            <div class="col-sm-12 col-md-2 mt-5 form-group">
               <input type="radio" name="radio" aria-label="" />
               <label>Na Semana</label>
             </div>
-            <div class="col-sm-12 col-md-2 mt-5">
+            <div class="col-sm-12 col-md-2 mt-5 form-group">
               <input type="radio" name="radio" aria-label="" />
               <label>No ano</label>
             </div>
-            <div class="col-sm-12 col-md-2">
+            <div class="col-sm-12 col-md-2 form-group">
               <label>Data inicial</label>
               <input type="text" aria-label="" class="form-control" />
             </div>
@@ -381,7 +381,15 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12 col-md-12 form-group">
+                <div class="col-sm-12 col-md-4 form-group">
+                  <label>Local de Pagamento</label>
+                  <select class="form-control">
+                    <option value="">Em mãos</option>
+                    <option>Em casa</option>
+                    <option>Funerária</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-8 form-group">
                   <label>Observação</label>
                   <textarea
                     rows="3"
