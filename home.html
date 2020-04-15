@@ -77,7 +77,7 @@
       <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="navbar-btn"></button>
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
               <span></span>
               <span></span>
               <span></span>
@@ -113,110 +113,194 @@
 
         <!-- CONTAINER -->
         <div class="shadow p-3 mb-5 bg-white rounded">
-            <div class="row">
-                <div class="col-sm-12 col-md-2 mt-5">
-                    <input type="radio" name="radio" aria-label=""> <label>No mês</label>
-                </div>
-                <div class="col-sm-12 col-md-2 mt-5">
-                    <input type="radio" name="radio" aria-label=""> <label>Na Semana</label>
-                </div>
-                <div class="col-sm-12 col-md-2 mt-5">
-                    <input type="radio" name="radio" aria-label=""> <label>No ano</label>
-                </div>
-                <div class="col-sm-12 col-md-2">
-                    <label>Data inicial</label>
-                    <input type="text"  aria-label="" class="form-control"> 
-                </div>
-                <div class="col-sm-12 col-md-2">
-                    <label>Data Final</label>
-                    <input type="text" aria-label="" class="form-control"> 
-                </div>
-                <div class="col-sm-12 col-md-2 mt-4">
-                    <button type="button" class="btn btn-roxo btn-block">Consultar</button>
-                </div>
-            </div>            
-        </div>        
+          <div class="row">
+            <div class="col-sm-12 col-md-2 mt-5">
+              <input type="radio" name="radio" aria-label="" />
+              <label>No mês</label>
+            </div>
+            <div class="col-sm-12 col-md-2 mt-5">
+              <input type="radio" name="radio" aria-label="" />
+              <label>Na Semana</label>
+            </div>
+            <div class="col-sm-12 col-md-2 mt-5">
+              <input type="radio" name="radio" aria-label="" />
+              <label>No ano</label>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <label>Data inicial</label>
+              <input type="text" aria-label="" class="form-control" />
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <label>Data Final</label>
+              <input type="text" aria-label="" class="form-control" />
+            </div>
+            <div class="col-sm-12 col-md-2 mt-4">
+              <button type="button" class="btn btn-roxo btn-block">
+                Consultar
+              </button>
+            </div>
+          </div>
+        </div>
         <hr />
         <!-- Tabela -->
         <div class="row">
-            <div class="col-sm-12 table-responsive">
-                <table class="table table-striped table-hover">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Data Parcela</th>
-                        <th scope="col">Valor Parc.</th>
-                        <th scope="col">Data de Pgto</th>
-                        <th scope="col">Valor Pagt.</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">#</th>
-                        <th scope="col">#</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Cliente 1</td>
-                        <td>14/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td>16/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td class="Pendente">Pago com atraso</td>
-                        <td><a type="button" href="/funeraria-frontend/cadastro-cliente.html" class="btn btn-primary btn-sm btn-block">Ver cliente</a></td>
-                        <td><button type="button" class="btn btn-success btn-sm btn-block" data-toggle="modal" data-target="#ExemploModalCentralizado">Pagar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Cliente 2</td>
-                        <td>14/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td>14/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td class="Pago">Pago sem atraso</td>
-                        <td><a type="button" href="/funeraria-frontend/cadastro-cliente.html" class="btn btn-primary btn-sm btn-block">Ver cliente</a></td>
-                        <td><button type="button" class="btn btn-success btn-sm btn-block" data-toggle="modal" data-target="#ExemploModalCentralizado">Pagar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Cliente 4</td>
-                        <td>18/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a type="button" href="/funeraria-frontend/cadastro-cliente.html" class="btn btn-primary btn-sm btn-block">Ver cliente</a></td>
-                        <td><button type="button" class="btn btn-success btn-sm btn-block" data-toggle="modal" data-target="#ExemploModalCentralizado">Pagar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Cliente 5</td>
-                        <td>22/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a type="button" href="/funeraria-frontend/cadastro-cliente.html" class="btn btn-primary btn-sm btn-block">Ver cliente</a></td>
-                        <td><button type="button" class="btn btn-success btn-sm btn-block" data-toggle="modal" data-target="#ExemploModalCentralizado">Pagar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Cliente 6</td>
-                        <td>10/04/2020</td>
-                        <td>R$ 50,00</td>
-                        <td></td>
-                        <td></td>
-                        <td class="comAtraso">Atrasado</td>
-                        <td><a type="button" href="/funeraria-frontend/cadastro-cliente.html" class="btn btn-primary btn-sm btn-block">Ver cliente</a></td>
-                        <td><button type="button" class="btn btn-success btn-sm btn-block" data-toggle="modal" data-target="#ExemploModalCentralizado">Pagar</button></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div> 
-
+          <div class="col-sm-12 table-responsive">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Cliente</th>
+                  <th scope="col">Data Parcela</th>
+                  <th scope="col">Valor Parc.</th>
+                  <th scope="col">Data de Pgto</th>
+                  <th scope="col">Valor Pagt.</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">#</th>
+                  <th scope="col">#</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Cliente 1</td>
+                  <td>14/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td>16/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td class="Pendente">Pago com atraso</td>
+                  <td>
+                    <a
+                      type="button"
+                      href="/funeraria-frontend/cadastro-cliente.html"
+                      class="btn btn-primary btn-sm btn-block"
+                      >Ver cliente</a
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm btn-block"
+                      data-toggle="modal"
+                      data-target="#ExemploModalCentralizado"
+                    >
+                      Pagar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Cliente 2</td>
+                  <td>14/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td>14/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td class="Pago">Pago sem atraso</td>
+                  <td>
+                    <a
+                      type="button"
+                      href="/funeraria-frontend/cadastro-cliente.html"
+                      class="btn btn-primary btn-sm btn-block"
+                      >Ver cliente</a
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm btn-block"
+                      data-toggle="modal"
+                      data-target="#ExemploModalCentralizado"
+                    >
+                      Pagar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Cliente 4</td>
+                  <td>18/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <a
+                      type="button"
+                      href="/funeraria-frontend/cadastro-cliente.html"
+                      class="btn btn-primary btn-sm btn-block"
+                      >Ver cliente</a
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm btn-block"
+                      data-toggle="modal"
+                      data-target="#ExemploModalCentralizado"
+                    >
+                      Pagar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Cliente 5</td>
+                  <td>22/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <a
+                      type="button"
+                      href="/funeraria-frontend/cadastro-cliente.html"
+                      class="btn btn-primary btn-sm btn-block"
+                      >Ver cliente</a
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm btn-block"
+                      data-toggle="modal"
+                      data-target="#ExemploModalCentralizado"
+                    >
+                      Pagar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Cliente 6</td>
+                  <td>10/04/2020</td>
+                  <td>R$ 50,00</td>
+                  <td></td>
+                  <td></td>
+                  <td class="comAtraso">Atrasado</td>
+                  <td>
+                    <a
+                      type="button"
+                      href="/funeraria-frontend/cadastro-cliente.html"
+                      class="btn btn-primary btn-sm btn-block"
+                      >Ver cliente</a
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-sm btn-block"
+                      data-toggle="modal"
+                      data-target="#ExemploModalCentralizado"
+                    >
+                      Pagar
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -246,47 +330,81 @@
     </script>
 
     <!-- Modal -->
-    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+    <div
+      class="modal fade"
+      id="ExemploModalCentralizado"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="TituloModalCentralizado"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="TituloModalCentralizado">Realizar Pagamento</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <h5 class="modal-title" id="TituloModalCentralizado">
+              Realizar Pagamento
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <!-- Descricao do Plano -->
             <div class="shadow p-3 mb-5 bg-white rounded">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 form-group">
-                        <label>Data do Pagamento</label>
-                        <input type="date" aria-label="" class="form-control"/>
-                    </div>
-                    <div class="col-sm-12 col-md-4 form-group">
-                      <label>Valor Pago</label>
-                      <input type="text" aria-label="" class="form-control" placeholder="R$ XXXX,XX"/>
-                    </div>
-                    <div class="col-sm-12 col-md-4 form-group">
-                      <label>Responsável</label>
-                      <input type="text" aria-label="" class="form-control" placeholder="Ex: Junior A."/>
-                    </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-4 form-group">
+                  <label>Data do Pagamento</label>
+                  <input type="date" aria-label="" class="form-control" />
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 form-group">
-                        <label>Observação</label>
-                        <textarea rows="3" type="text" aria-label="" class="form-control"></textarea>
-                    </div>
+                <div class="col-sm-12 col-md-4 form-group">
+                  <label>Valor Pago</label>
+                  <input
+                    type="text"
+                    aria-label=""
+                    class="form-control"
+                    placeholder="R$ XXXX,XX"
+                  />
                 </div>
+                <div class="col-sm-12 col-md-4 form-group">
+                  <label>Responsável</label>
+                  <input
+                    type="text"
+                    aria-label=""
+                    class="form-control"
+                    placeholder="Ex: Junior A."
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 form-group">
+                  <label>Observação</label>
+                  <textarea
+                    rows="3"
+                    type="text"
+                    aria-label=""
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Fechar
+            </button>
             <button type="button" class="btn btn-primary">Salvar</button>
           </div>
         </div>
       </div>
     </div>
-    
   </body>
 </html>
